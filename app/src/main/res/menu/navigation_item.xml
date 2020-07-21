@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/country"
+        android:icon="@drawable/countryart"
+        android:fontFamily="@font/nunito_semibold"
+        android:title="@string/country" />
+    <item
+        android:id="@+id/impInfo"
+        android:icon="@drawable/infoart"
+        android:fontFamily="@font/nunito_semibold"
+        android:title="@string/info" />
+
+    <item android:id="@+id/world"
+        android:icon="@drawable/ic_public_black_24dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:title="@string/world"/>
+</menu>

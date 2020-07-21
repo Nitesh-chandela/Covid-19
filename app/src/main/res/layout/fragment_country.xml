@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".CountryFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/countryName"
+                    android:layout_width="fill_parent"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="25dp"
+                    android:text="India"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:text="Total Covid-19 Cases"
+                    android:textColor="#fff"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+                    <Button
+                        android:id="@+id/buttonPanel"
+                        android:text="Click here to view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/shape3"
+                        android:layout_height="wrap_content">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/curvedEdges"
+            android:background="@drawable/shape2"/>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <WebView
+            android:src="@drawable/imageedit_1_2139936459"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/f1WebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

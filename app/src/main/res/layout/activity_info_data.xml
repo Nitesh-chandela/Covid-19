@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.covid_19.InfoData">
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ScrollView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:id="@+id/one"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Reported illnesses have ranged from mild symptoms to severe illness and death for confirmed coronavirus disease 2019 (COVID-19) cases. \n \n These symptoms may appear 2-14 days after exposure (based on the incubation period of MERS-CoV viruses)."
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <TextView
+                            android:text="\n1. Fever"
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:src="@drawable/symptomsfever"
+                            android:layout_gravity="center"
+                            android:layout_height="100dp"></ImageView>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+
+                        <TextView
+                            android:text="\n2. Cough"
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:src="@drawable/symptomscough"
+                            android:layout_gravity="center"
+                            android:layout_height="100dp"></ImageView>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+
+                        <TextView
+                            android:text="\n3. Shortness of breath"
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:src="@drawable/symptomsshortnessofbreath"
+                            android:layout_gravity="center"
+                            android:layout_height="100dp"></ImageView>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+
+
+                        <TextView
+                            android:text="\n When to Seek Medical Attention "
+                            android:layout_width="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="\nIf you develop emergency warning signs for COVID-19 get medical attention immediately. Emergency warning signs include*:
+
+\n1. Trouble breathing
+\n2. Persistent pain or pressure in the chest
+\n3. New confusion or inability to arouse
+\n4. Bluish lips or face
+\n\n*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning."
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:text=" The national helpline number is \n91-11-23978046"
+                                        android:layout_width="wrap_content"
+                                        android:fontFamily="@font/nunito_semibold"
+                                        android:autoLink="phone"
+                                        android:textSize="15dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:linksClickable="true"
+                                        android:textColor="@color/colorPrimary"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Central Helpline Email"
+                                        android:fontFamily="@font/nunito_semibold"
+                                        android:textColor="@color/colorPrimary"
+                                        android:layout_margin="8dp"
+                                        android:textSize="15dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_margin="3dp"
+                                        android:layout_height="wrap_content">
+                                    <TextView
+                                        android:text="ncov2019@gov.in"
+                                        android:textSize="14dp"
+                                        android:layout_margin="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:autoLink="email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:text="ncov2019@gmail.com"
+                                            android:textSize="14dp"
+                                            android:layout_margin="5dp"
+                                            android:textColor="@color/colorPrimary"
+                                            android:autoLink="email"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:text="DELHI\n1. All India Institute Medical Sciences (AIIMS)\n2. National Centre for Disease Control (NCDC)"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Delhi: 011-22307154"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="MAHARASHTRA\n1. Indira Gandhi Government Medical College, Nagpur\n2. Kasturba Hospital for Infectious Diseases, Mumbai"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Maharashtra: 020-26127394"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="RAJASTHAN
+\n1. Sawai Man Singh, Jaipur
+\n2. Dr. S.N Medical College, Jodhpur
+\n3. Jhalawar Medical College, Jhalawar
+\n4. SP Med. College, Bikaner
+\n5. RNT Medical College, Udaipur"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Rajasthan: 0141-2225624"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="TAMIL NADU
+\n1. King's Institute of Preventive Medicine &amp; Research, Chennai
+\n2. Government Medical College, Theni
+\n3. Tirunelveli Medical College, Tirunelveli
+\n4. Govt. Medical college, Thiruvaru"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Tamil Nadu: 044-29510500"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="UTTAR PRADESH
+\n1. King's George Medical University, Lucknow
+\n2. GInstitute of Medical Sciences, Banaras Hindu University, Varanasi
+
+\n3. Jawaharlal Nehru Medical College, Aligarh
+
+\n4. Govt. Medical college, Thiruvaru"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Uttar Pradesh: 18001805145"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="UTTARAKHAND
+
+\n1. Government Medical College, Haldwani"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Uttarakhand: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="WEST BENGAL
+
+
+\n1. National Institute of Cholera and Enteric Diseases, Kolkata
+
+\n2. IPGMER, Kolkata"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for West Bengal: 3323412600"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="MADHYA PRADESH
+
+
+\n1. All India Institute Medical Sciences, Bhopal
+
+\n2. National Institute of Research in Tribal Health (NIRTH), Jabalpur"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Madhya Pradesh: 0755-2527177"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="KERALA
+
+\n1. National Institute of Virology Field Unit
+
+\n2. Govt. Medical College, Thriuvananthapuram
+
+\n3. Govt. Medical College, Kozhikhode
+
+\n4. Govt. Medical College, Thrissur
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Kerala: 0471-2552056"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="KARNATAKA
+
+
+\n1. Bangalore Medical College &amp; Research Institute, Bangalore
+
+\n2. National Institute of Virology Field Unit Bangalore
+
+\n3. Mysore Medical College &amp; Research Institute, Mysore
+
+\n4. Hassan Inst. of Med. Sciences, Hassan
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Karnataka: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="GUJARAT
+\n1. BJ Medical College, Ahmedabad
+
+\n2. M.P.Shah Government Medical College, Jamnagar
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Gujarat: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="HARYANA
+\n1. BPS Govt Medical College, Sonipat
+
+\n2. Pt. B.D. Sharma Post Graduate Inst. of Med. Sciences, Rohtak
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Haryana: 8558893911"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="HIMACHAL PRADESH
+
+
+\n1. Indira Gandhi Medical College, Shimla, Himachal Pradesh
+
+\n2. Dr. Rajendra Prasad Govt. Med. College, Kangra, Tanda
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Himachal Pradesh: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="JAMMU AND KASHMIR
+
+
+\n1. Sher-e- Kashmir Institute of Medical Sciences, Srinagar
+
+\n2. Government Medical College, Jammu
+
+\n3. Government Medical College, Srinagar
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Jammu: 01912520982"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="JHARKHAND
+\n1. MGM Medical College, Jamshedpur
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Jharkhand: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="MEGHALAYA
+
+
+\n1. NEIGRI of Health and Medical Sciences, Shillong
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Meghalaya: 108"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="MANIPUR
+\n1. J N Inst. of Med. Sciences Hospital, Imphal-East, Manipur
+
+\n2. Regional Institute of Medical Sciences, Imphal
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Manipur: 3852411668"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="ODISHA
+\n1. Regional Medical Research Center, Bhubaneswar
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Odisha: 9439994859"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="PUNJAB
+\n1. Government Medical College, Patiala
+
+\n2. Government Medical College, Amritsar
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Punjab: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="PUDUCHERRY
+\n1. Jawaharlal Institute of Postgraduate Medical Education &amp; Research, Puducherry
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Punducherry: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="TELANGANA
+\n1. Gandhi Medical College, Secunderabad
+
+\n2. Osmania Medical College, Hyderabad
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Telangana: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="TRIPURA
+\n1. Government Medical College, Agartala
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Tripura: 0381-2315879"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="BIHAR
+\n1. Rajendra Memorial Research Institute of Medical Sciences, Patna
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Bihar: 104"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="CHANDIGARH
+\n1. Post Graduate Institute of Medical Education &amp; Research, Chandigarh
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Chandigarh: 9779558282"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="CHHATTISGARH
+\n1. All India Institute  Medical Sciences, Raipur
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Chhattisgarh: 077122-35091"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="ANDAMAN and NICOBAR ISLANDS
+
+
+\n1. Regional Medical Research Centre, Port Blair, Andaman and Nicobar
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Andaman and Nicobar Islands: 03192-232102"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="ANDHRA PRADESH
+
+
+\n1. Sri Venkateswara Institute of Medical Sciences, Tirupati
+
+\n2. Andhra Medical College, Visakhapatnam
+
+\n3. GMC, Anantapur
+
+\n4. Sidhartha Medical College, Vijayawada
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="Coronavirus helpline number for Andhra Pradesh: 08662410978"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+                                    <TextView
+                                        android:text="ASSAM
+\n1. Gauhati Medical College, Guwahati
+
+\n2. Regional Medical Research Center, Dibrugarh
+
+\n3. Silchar Medical College, Silchar
+
+\n4. Jorhat Medical College, Jorhat
+"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:text="
+Coronavirus helpline number for Assam: 6913347770"
+                                        android:layout_width="wrap_content"
+                                        android:autoLink="phone"
+                                        android:linksClickable="true"
+                                        android:textColor="#000"
+                                        android:layout_height="wrap_content"/>
+
+                                    <View
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#000"/>
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:id="@+id/three"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:text="Here are the measures you need to take to keep the virus at bay:"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n1. Avoid close contact with people who are sick. Maintain at least three feet distance between yourself and anyone who is coughing or sneezing"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n2. Avoid touching your eyes, nose, and mouth"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n3. Stay home when you are sick."/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n4.Cover your cough or sneeze with a tissue, then dispose of the tissue safely. "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n5. Clean and disinfect frequently-touched objects and surfaces using a regular household cleaning spray or wipe."/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n6. Wearing a mask is not necessary unless you are taking care of an infected person. The Centers for Disease Control (CDC) does recommend that only infected people wear masks to prevent the spread of the virus."/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n7. Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom, before eating, and after blowing your nose, coughing, or sneezing."/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n8. If soap and water are not readily available, use an alcohol-based hand sanitiser with at least 60% alcohol. Always wash hands with soap and water when hands are visibly dirty.
+
+"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n9. If you have a fever, cough and difficulty breathing, seek medical attention immediately."/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="\n10. Keep in mind the travel advisory set out by the Ministry of Health and Welfare."/>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/testingWeb"
+                android:layout_height="match_parent"></WebView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progressTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progress="20"
+            android:theme="@style/ProgressBarTheme" />
+    </RelativeLayout>
+
+</RelativeLayout>
